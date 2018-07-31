@@ -19,3 +19,7 @@ nav {
     width: 300px;
     margin: 80px auto 30px auto;
 }
+
+.features-container {
+    background-color: purple;
+}
