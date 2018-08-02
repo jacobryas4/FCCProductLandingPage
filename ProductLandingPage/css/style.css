@@ -61,8 +61,11 @@ section {
 
 .headline-container {
     text-align: center;
-    width: 300px;
+    width: 370px;
     margin: auto;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 
 
@@ -98,6 +101,16 @@ section {
 
 .footer {
     background-color: black;
-    height: 200px;
+    height: 100px;
     color: white;
+    display: flex;
+}
+
+.footer-right, .footer-left {
+    margin: auto;
+}
+
+.footer-left p {
+    margin-left: 10px;
+    float: 
 }
