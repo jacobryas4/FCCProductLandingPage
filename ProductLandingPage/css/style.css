@@ -6,12 +6,24 @@ nav {
     height: 50px;
     background-color: black;
     width: 100%;
+    display: flex;
+   
+}
+
+nav a {
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
 }
 
 .container {
     width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex; */
 }
 
 .headline-container {
@@ -22,4 +34,30 @@ nav {
 
 .features-container {
     background-color: purple;
+}
+
+.video {
+    background-color: green;
+}
+
+.pricing {
+    display: flex;
+}
+
+.options-container {
+    margin: auto;
+}
+
+.option {
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+}
+
+.footer {
+    background-color: black;
+    height: 200px;
+    color: white;
 }
