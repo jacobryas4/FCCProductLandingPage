@@ -3,11 +3,15 @@
     
 }
 
-
+#header {
+    background-color: transparent;
+    position: fixed;
+    color: white;
+}
 
 nav {
     /* height: 70px; */
-    background-color: blue;
+    background-color: transparent;
     width: 100%;
     display: flex;
     /* justify-content: flex-end; */
@@ -18,7 +22,7 @@ nav {
 nav a {
     /* margin: auto 50px; */
     padding: 20px 22px;
-    color: black;
+    color: white;
     text-decoration: none;
     float: right;
     text-align: center;
@@ -37,6 +41,7 @@ nav h3 {
 nav img {
     height: 50px;
     margin: auto 0;
+    fill: white;
 }
 
 section {
@@ -71,12 +76,44 @@ section {
 
 
 .features {
-    background-color: purple;
+    background-color: #4D5E7A;
     display: flex;
 }
 
 .features-container {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.feature {
+    width: 50em;
+    align-content: center;
+    display: flex;
+    background-color: #C4E5FC;
+    border-radius: 25px;
+    padding-left: 25px;
+    
+}
+
+.feature-img .feature-text {
+    margin: auto;
+}
+
+.feature img {
+    width: 75px;
+    float: left;
+    border: 0;
+    margin: 15px 0 0 0;
+    
+}
+
+.feature-text {
+    float: right;
+    padding-left: 25px;
 }
 
 .video {
@@ -104,13 +141,13 @@ section {
     height: 100px;
     color: white;
     display: flex;
+
 }
 
 .footer-right, .footer-left {
     margin: auto;
 }
 
-.footer-left p {
+.footer-left {
     margin-left: 10px;
-    float: 
 }
