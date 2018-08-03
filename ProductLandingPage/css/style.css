@@ -45,6 +45,12 @@ nav img {
     fill: white;
 }
 
+/* class applied after scroll */
+.scrolled {
+    background-color: black;
+    transition: background-color 200ms linear;
+}
+
 section {
     width: 100%;
     margin: 0;

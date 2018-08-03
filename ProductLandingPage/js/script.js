@@ -4,6 +4,18 @@ $(document).ready(function() {
 
    $(window).trigger('scroll');
 
+   // add animation to nav to make it visible once past header img
+    var scrollAnimation = function () {
+
+       $(document).scroll(function() {
+
+           $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
+
+       })
+    }
+
+    scrollAnimation();
+
 })
 
 function check_if_in_view() {
