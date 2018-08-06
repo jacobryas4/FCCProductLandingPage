@@ -1,25 +1,41 @@
 $(document).ready(function() {
 
    $(window).on('scroll resize', check_if_in_view);
+   $(window).on('scroll', scrollAnimation);
 
    $(window).trigger('scroll');
 
+   // OLD CODE FOR NAV ANIMATION, MOVED DOWN IN PAGE IN ATTEMPT TO USE ADDCLASS INSTEAD OF TOGGLECLASS
+
    // add animation to nav to make it visible once past header img
-    var scrollAnimation = function () {
+    // var scrollAnimation = function () {
 
-       $(document).scroll(function() {
+    //     console.log($(this).scrollTop());
 
-           $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
+    // //    $(document).scroll(function() {
 
-       })
-    }
+    // //        $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
+    
+    // //    })
+        
+    //     if ($(this).scrollTop() > ($('.headline').height() - $('nav').height())) {
 
-    scrollAnimation();
+    //         $('nav').addClass('scrolled');
+
+    //     } else {
+
+    //         $('nav').removeClass('scrolled');
+
+    //     }
+
+    // }
+
+    // scrollAnimation();
 
 })
 
 function check_if_in_view() {
-
+    
     // get elements
 
     var window_height = $(window).height();
@@ -57,3 +73,24 @@ function check_if_in_view() {
 
 }
 
+var scrollAnimation = function () {
+    
+            console.log($(this).scrollTop());
+    
+        //    $(document).scroll(function() {
+    
+        //        $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
+        
+        //    })
+            
+            if ($(this).scrollTop() > ($('.headline').height() - $('nav').height())) {
+    
+                $('nav').addClass('scrolled');
+    
+            } else {
+    
+                $('nav').removeClass('scrolled');
+    
+            }
+    
+        }

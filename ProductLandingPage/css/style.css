@@ -12,12 +12,11 @@
 
 nav {
     /* height: 70px; */
-    background-color: transparent;
     width: 100%;
     display: flex;
     /* justify-content: flex-end; */
     margin: 0;
-    
+    background-color: transparent;
 }
 
 nav a {
