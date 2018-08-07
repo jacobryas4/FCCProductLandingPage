@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
    $(window).on('scroll resize', check_if_in_view);
-   $(window).on('scroll', scrollAnimation);
+//    $(window).on('scroll', scrollAnimation);
 
    $(window).trigger('scroll');
 
@@ -31,6 +31,19 @@ $(document).ready(function() {
     // }
 
     // scrollAnimation();
+
+    var scrollTop = 0;
+    $(window).scroll(function(){
+      scrollTop = $(window).scrollTop();
+       
+      
+      if (scrollTop >= 100) {
+        $('nav').addClass('scrolled');
+      } else if (scrollTop < 100) {
+        $('nav').removeClass('scrolled');
+      } 
+      
+    }); 
 
 })
 
@@ -73,24 +86,24 @@ function check_if_in_view() {
 
 }
 
-var scrollAnimation = function () {
+// var scrollAnimation = function () {
     
-            console.log($(this).scrollTop());
+//             console.log($(this).scrollTop());
     
-        //    $(document).scroll(function() {
+//         //    $(document).scroll(function() {
     
-        //        $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
+//         //        $('nav').toggleClass('scrolled', $(this).scrollTop() > ($('.headline').height()) - $('nav').height());
         
-        //    })
+//         //    })
             
-            if ($(this).scrollTop() > ($('.headline').height() - $('nav').height())) {
+//             if ($(this).scrollTop() > ($('.headline').height() - $('nav').height())) {
     
-                $('nav').addClass('scrolled');
+//                 $('nav').addClass('scrolled');
     
-            } else {
+//             } else {
     
-                $('nav').removeClass('scrolled');
+//                 $('nav').removeClass('scrolled');
     
-            }
+//             }
     
-        }
+//         }

@@ -10,6 +10,10 @@
     z-index: 100;
 }
 
+#nav-bar {
+    transition: 0.5s linear all;
+}
+
 nav {
     /* height: 70px; */
     width: 100%;
