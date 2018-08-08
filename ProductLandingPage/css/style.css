@@ -1,6 +1,28 @@
+
+
+/* 
+
+Colors:
+
+Dark blue: #071826
+Teal:      #164059
+Grey Blue: #567D8C
+Beige:     #F2F2F0
+Tan/White: #F2E3D5
+
+*/
+
+/* Fonts 
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway');
+
 .container, body {
     margin: 0;
-    
 }
 
 #header {
@@ -8,6 +30,8 @@
     position: fixed;
     color: white;
     z-index: 100;
+    width: 100%;
+    font-family: 'Lora', serif;
 }
 
 #nav-bar {
@@ -72,6 +96,7 @@ section {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Lora', serif;
 }
 
 .headline-container {
@@ -86,7 +111,7 @@ section {
 
 
 .features {
-    background-color: #4D5E7A;
+    background-color: #164059;
     display: flex;
     
 }
@@ -110,6 +135,14 @@ section {
     padding-left: 25px;
     position: relative;
     z-index: 1;
+}
+
+.feature-text h2 {
+    font-family: 'Lora', serif;
+}
+
+.feature-text h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .bounce-up {
@@ -155,7 +188,13 @@ section {
 }
 
 .video {
-    background-color: green;
+    background-color: #071826;
+    display: flex;
+    height: 500px;
+}
+
+#barrel-video {
+    margin: auto;
 }
 
 .pricing {
@@ -171,7 +210,9 @@ section {
     width: 200px;
     height: 300px;
     display: inline-block;
-    margin: auto;
+    margin: 30px 25px;
+    float: left;
+    padding: 15px 10px;
 }
 
 .footer {
@@ -179,7 +220,7 @@ section {
     height: 100px;
     color: white;
     display: flex;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer-right, .footer-left {
