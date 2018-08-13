@@ -213,6 +213,16 @@ section {
     margin: 30px 25px;
     float: left;
     padding: 15px 10px;
+    position: relative;
+}
+
+.option button {
+    position: absolute;
+    bottom: 15px;
+    width: 150px;
+    height: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .footer {
