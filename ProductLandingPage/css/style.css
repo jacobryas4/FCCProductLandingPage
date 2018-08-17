@@ -214,6 +214,8 @@ section {
     float: left;
     padding: 15px 10px;
     position: relative;
+    font-family: 'Raleway', sans-serif;
+    background-color: #C4E5FC;
 }
 
 .option button {
