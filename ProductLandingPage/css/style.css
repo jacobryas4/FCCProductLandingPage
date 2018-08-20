@@ -74,7 +74,7 @@ nav img {
 
 /* class applied after scroll */
 .scrolled {
-    background-color: black;
+    background-color: rgba(7,24,38,0.8);
     transition: background-color 200ms linear;
 }
 
@@ -225,20 +225,38 @@ section {
     height: 30px;
     margin-right: 25px;
     margin-left: 25px;
+    background-color: #071826;
+    color: white;
+    border-radius: 10px;
+}
+
+/* class for when button is pressed */
+.pressed {
+    background-color: #125083 !important;
 }
 
 .footer {
-    background-color: black;
+    background-color: #071826;
     height: 100px;
     color: white;
     display: flex;
     font-family: 'Raleway', sans-serif;
 }
 
-.footer-right, .footer-left {
+/* .footer-right, .footer-left {
     margin: auto;
+} */
+
+.footer-right {
+    position: absolute;
+    text-align: right;
+    float: right;
+    width: 250px;
+    right: 20px;
 }
 
 .footer-left {
     margin-left: 10px;
+    float: left;
+    text-align: left;
 }

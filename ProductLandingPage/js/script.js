@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+
+    // button styles on options, on click
+    $('button').mouseup(function(){
+        $(this).removeClass('pressed');
+    })
+    $('button').mousedown(function(){
+        $(this).addClass('pressed');
+    })
+
+
+    // check if 'features' is in view
    $(window).on('scroll resize', check_if_in_view);
 
    $(window).trigger('scroll');
